@@ -1,0 +1,38 @@
+<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+    <span class="text-white font-bold uppercase text-lg mt-52">Data Science</span>
+  </div>
+</div>
+<div class="relative bg-gray-300 h-96 w-72 rounded-lg overflow-hidden  transform transition duration-300 hover:scale-105 hover:-translate-y-0 shadow-lg">
+  <img src="./assets/img/java.jpg" alt="Java" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+    <span class="text-white font-bold uppercase text-lg"></span>
+  </div>
+</div>
+<div class="relative bg-gray-300 h-96 w-72 rounded-lg overflow-hidden  transform transition duration-300 hover:scale-105 hover:-translate-y-0 shadow-lg">
+  <img src="./assets/img/sqll.webp" alt="SQL" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+    <span class="text-white font-bold uppercase text-lg"></span>
+  </div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+<script>
+new Splide('#course-slider', {
+  type: 'loop',
+  perPage: 3,
+  breakpoints: {
+      640: {
+          perPage: 1,
+      },
+      768: {
+          perPage: 2,
+      },
+  },
+}).mount();
+</script>
+
+</body>
+
+</html>
