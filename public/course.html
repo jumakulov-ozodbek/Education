@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/src/course.css">
+    <title>course</title>
+</head>
+<body>
+    <div id="preloader">
+        <iframe class="hidden" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="hidden" width="560"
+            height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk?si=JHwyqQqHoIJ9Z0KV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <header class="bg-[#666666] w-[100%] h-[105vh]">
+        <div class="bg-transparent container max-w-[1400px] mx-auto pt-10">
+            <div class="md:flex md:justify-between md:items-center px-10 md:block hidden ">
+                <img src="/assets/svg/Logo (4).svg" alt="dowland">
+                <input type="text" placeholder="Search bar"class="w-[400px] px-4 py-2 text-white bg-[#666666] active:outline-none   rounded-lg outline-none placeholder:text-white border"/>
+                <div class="relative inline-block text-left">
+                    <button
+                      class="inline-flex justify-center w-full rounded-md px-4 py-2 bg-[#666666] text-sm font-medium   text-white focus:outline-none  "
+                      id="menu-button"
+                      aria-expanded="true"
+                      aria-haspopup="true"
+                    >
+                      Category
+                      <svg
+                        class="-mr-1 ml-2 h-5 w-5 "
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  
+                    <!-- Dropdown Menu -->
+                    <div
+                      class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                      role="menu"
+                      aria-orientation="vertical"
+                      aria-labelledby="menu-button"
+                      tabindex="-1"
+                    >
+                      <div class="py-1" role="none">
+                        <!-- Dropdown Items -->
+                        <a
+                          href="#"
+                          class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                          role="menuitem"
+                          tabindex="-1"
+                          id="menu-item-0"
+                        >Account settings</a>
+                        <a
+                          href="#"
+                          class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                          role="menuitem"
+                          tabindex="-1"
+                          id="menu-item-1"
+                        >Support</a>
+                        <a
+                          href="#"
+                          class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                          role="menuitem"
+                          tabindex="-1"
+                          id="menu-item-2"
+                        >Sign out</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="md:flex gap-2 md:items-center">
+                  <div>
+                    <a class="text-white" href="#">Become an Mentor</a>
+                </div>
+                <div>
+                    <button class=" w-[150px] border hover:border-none border-white text-white bg-[#666666] px-4 py-2 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                        Login
+                    </button>                      
+                </div>
+                <div>
+                    <button class=" w-[150px] text-white bg-[#F72585] px-4 py-2 rounded-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-white">
+                        Sign Up
+                    </button>                      
+                </div>
+                </div>
+            </div>
+            <div class="block md:hidden px-10">
+              <div class="flex justify-between">
+                <a href="/index.html">
+                  <img src="/assets/svg/Logo (4).svg" alt="dowland">
+                </a>
+              <img src="/assets/svg/icons8-menu-bar (2).svg" alt="dowland">
+              </div>
+            </div>
+        </div>
+        <div class="bg-transparent container max-w-[1400px] mx-auto pt-10 ">
+          <div class="text-white md:flex  md:gap-10 sm:flex-wrap px-10">
+            <a class="flex gap-2" href="#">Home
+              <img src="/assets/svg/Arrow Chevron Right.svg" alt="dowland">
+            </a>
+            <a class="flex gap-2" href="#">Programming Courses
+              <img src="/assets/svg/Arrow Chevron Right.svg" alt="dowland">
+            </a>
+            <a href="#">How to become an Expert Web Developer</a>
+          </div>
+          <div class="px-10 md:flex md:flex-col md:gap-10 gap-6 md:pt-20">
+            <div class="text-white flex flex-col gap-1 text-5xl font-semibold md:block hidden  ">
+              <p>How to become an Expert</p>
+              <p>Web Developer</p>
+            </div>
+            <div>
+              <div class="md:flex md:gap-3">
+                <div class="flex gap-3">
+                  <img src="/assets/svg/3.svg" alt="dowland">
+                  <img src="/assets/svg/3.svg" alt="dowland">
+                  <img src="/assets/svg/3.svg" alt="dowland">
+                  <img src="/assets/svg/3.svg" alt="dowland">
+                  <img src="/assets/svg/3.svg" alt="dowland">
+                </div>
+                <div class="text-white">
+                  <a href="#">4,7/5</a>
+                </div>
+                <div class="text-[#E6E6E6] flex gap-2">
+                  <p>(1023 Reviews)</p>
+                  <p>20327 Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="md:flex md:items-center md:gap-2">
+              <img src="/assets/svg/Container.svg" alt="dowland">
+              <p class="text-xl text-white">Pak Arif Satria Kecek ulalala</p>
+            </div>
+            <div class="md:flex md:gap-3  max-w-full ">
+                <button class="flex md:w-[200px] h-[45px] max-w-full gap-2  mb-3 px-4 py-2 bg-[#F72585] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300">
+                  CAdd To Wishlist
+                  <img src="/assets/svg/plus.svg" alt="dowland">
+                </button>
+                <button class="flex gap-2 px-4 md:w-[150px] h-[45px] max-w-full py-2 bg-white text-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300">
+                  Share
+                  <img src="/assets/svg/share.svg" alt="dowland">
+                </button>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main class="px-10">
+      <div class="bg-transparent container max-w-[1400px] mx-auto pt-10 ">
+        <div class="md:flex md:justify-between">
+          <div class="md:flex flex-col gap-8 md:w-[600px] sm:w-[300px] mb-10">
+            <p class="text-3xl font-semibold">What you’ll learn from this course</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris. Proin pulvinar fringilla nunc, tristique urna, massa, tincidunt. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris. Proin pulvinar fringilla nunc, tristique urna, massa, tincidunt. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat</p>
+            <div class="md:flex gap-4  bg-[#FFF5F9] px-5 py-5 rounded-md">
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Build fully websites and web apps</p>
+                  <p>for your startup or business.</p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Build fully websites and web apps</p>
+                  <p>for your startup or business.</p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Build fully websites and web apps</p>
+                  <p>for your startup or business.</p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Build fully websites and web apps</p>
+                  <p>for your startup or business.</p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Build fully websites and web apps</p>
+                  <p>for your startup or business.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Craft a portfolio of websites to apply</p>
+                  <p>for your developer jobs.</p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Craft a portfolio of websites to apply</p>
+                  <p>for your developer jobs.</p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Craft a portfolio of websites to apply</p>
+                  <p>for your developer jobs.</p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Craft a portfolio of websites to apply</p>
+                  <p>for your developer jobs.</p>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <img src="/assets/svg/check-mark.svg" alt="dowland">
+                  <div>
+                    <p>Craft a portfolio of websites to apply</p>
+                  <p>for your developer jobs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-[350px] max-w-[300px]  h-[670px] border-2 border-[#CCCCCC] rounded-lg">
+            <img class="w-full" src="/assets/svg/overlay.svg"  alt="dowland">
+            <div class="flex flex-col gap-6 px-7  pb-10">
+              <div class="flex gap-10 mt-5">
+                <p class="text-[#1C3554]">$53</p>
+              <p class="text-[#CCCCCC]">$124</p>
+              </div>
+              <div class="border border-[#1C3554] rounded-full"></div>
+              <div class="flex justify-between">
+                <div>
+                  <p>64 Document </p>
+                <p>courses</p>
+                </div>
+                <button class="px-4 py-2  text-white rounded-md bg-[#EF233C] focus:outline-none focus:ring-2 focus:ring-blue-300">
+                  50% OFF
+                </button>                
+              </div >
+              <div class="flex justify-between">
+                <div class="flex flex-col gap-2">
+                  <div class="flex gap-2">
+                    <div class="w-[20px] h-[20px] rounded-full bg-[#1C3554]">
+                      <img src="/assets/svg/Check.svg" alt="dowland">
+                    </div>
+                    <p class="text-[#1C3554]">24 Modules</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <div class="w-[20px] h-[20px] rounded-full bg-[#1C3554]">
+                      <img src="/assets/svg/Check.svg" alt="dowland">
+                    </div>
+                    <p class="text-[#1C3554]">Full time access</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <div class="w-[20px] h-[20px] rounded-full bg-[#1C3554]">
+                      <img src="/assets/svg/Check.svg" alt="dowland">
+                    </div>
+                    <p class="text-[#1C3554]">Full time access</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div class="flex gap-2">
+                    <div class="w-[20px] h-[20px] rounded-full bg-[#1C3554]">
+                      <img src="/assets/svg/Check.svg" alt="dowland">
+                    </div>
+                    <p class="text-[#1C3554]">12 exercises</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <div class="w-[20px] h-[20px] rounded-full bg-[#1C3554]">
+                      <img src="/assets/svg/Check.svg" alt="dowland">
+                    </div>
+                    <p class="text-[#1C3554]">Certificate</p>
+                  </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <button class="px-4 py-2 w-full h-[50px] bg-[#F72585] text-white rounded-md  ">
+                Add To Cart
+              </button>
+              <button class="px-4 py-2 w-full h-[50px] bg-white text-[#F72585] rounded-md border border-[#F72585] ">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="bg-transparent container max-w-[1400px] mx-auto  pb-10  md:block hidden">
+      <div class="flex flex-col gap-2  bg-[#FFF5F9] md:w-[700px] px-5 rounded-lg pb-5 pt-6 ">
+        <div class="flex gap-2">
+          <img src="/assets/svg/check-mark.svg" alt="dowland">
+          <div>
+            <p>No programming experience needed - I'll teach you everything you need to know</p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <img src="/assets/svg/check-mark.svg" alt="dowland">
+          <div>
+            <p>A Mac or PC computer with access to the internet</p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <img src="/assets/svg/check-mark.svg" alt="dowland">
+          <div>
+            <p>No previous coding experience is needed</p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <img src="/assets/svg/check-mark.svg" alt="dowland">
+          <div>
+            <p>All tools and software used in this course will be free</p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <img src="/assets/svg/check-mark.svg" alt="dowland">
+          <div>
+            <p>Any operating system: Mac, PC, Linux</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="mx-auto max-w-[1400px]">
+          <div class="w-full mx-auto">
+              <div class="accordion flex flex-col gap-3 xl:mx-0 md:mx-1 mx-5 px-7 pb-10 pt-10 ">
+                  <div class="md:w-[600px] w-[300px]">
+                      <button
+                          class="accordion-button rounded-md bg-[#FFF5F9] flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black  focus:outline-none ">
+                          <span class="lg:text-[18px] text-[13px]">
+                            Introducing to Web Development
+                          </span>
+                          <img src="/assets/svg/chevron-top.svg" alt="#">
+                      </button>
+                      <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                        <div class="flex justify-between mb-3">
+                          <div class="flex gap-2 ">
+                            <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                            <p class="text-xl font-semibold ">Welcome!</p>
+                          </div>
+                          <div>
+                            <p>01:24</p>
+                          </div>
+                        </div>
+                        <div class="flex justify-between mb-3">
+                          <div class="flex gap-2">
+                            <img src="/assets/svg/Document.svg" alt="dowland">
+                            <p class="text-xl font-semibold">Syllabus download</p>
+                          </div>
+                          <div>
+                            <p>01:24</p>
+                          </div>
+                        </div>
+                        <div class="flex justify-between mb-3">
+                          <div class="flex gap-2">
+                            <img src="/assets/svg/Document.svg" alt="dowland">
+                            <p class="text-xl font-semibold">Courses resources</p>
+                          </div>
+                          <div>
+                            <p>01:24</p>
+                          </div>
+                        </div>
+                        <div class="flex justify-between mb-3">
+                          <div class="flex gap-2">
+                            <img src="/assets/svg/Document.svg" alt="dowland">
+                            <p class="text-xl font-semibold">Join online group classes</p>
+                          </div>
+                          <div>
+                            <p>01:24</p>
+                          </div>
+                        </div>
+                        <div class="flex justify-between mb-3">
+                          <div class="flex gap-2">
+                            <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                            <p class="text-xl font-semibold">How do website actually work?</p>
+                          </div>
+                          <div>
+                            <p>01:24</p>
+                          </div>
+                        </div>
+                        <div class="flex justify-between mb-3">
+                          <div class="flex gap-2">
+                            <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                            <p class="text-xl font-semibold">What is Internet?</p>
+                          </div>
+                          <div>
+                            <p>01:24</p>
+                          </div>
+                        </div>
+                        <div class="flex justify-between mb-3">
+                          <div class="flex gap-2">
+                            <img src="/assets/svg/Document.svg" alt="dowland">
+                            <p class="text-xl font-semibold">Download 10 rules code</p>
+                          </div>
+                          <div>
+                            <p>01:24</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="md:w-[600px] w-[300px]">
+                    <button
+                        class="accordion-button rounded-md bg-[#FFF5F9] flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black  focus:outline-none ">
+                        <span class="lg:text-[18px] text-[13px]">
+                          How the Internet works
+                        </span>
+                        <img src="/assets/svg/chevron-top.svg" alt="#">
+                    </button>
+                    <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                      <div class="flex justify-between mb-3">
+                        <div class="flex gap-2">
+                          <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                          <p class="text-xl font-semibold">Welcome!</p>
+                        </div>
+                        <div>
+                          <p>01:24</p>
+                        </div>
+                      </div>
+                      <div class="flex justify-between mb-3">
+                        <div class="flex gap-2">
+                          <img src="/assets/svg/Document.svg" alt="dowland">
+                          <p class="text-xl font-semibold">Syllabus download</p>
+                        </div>
+                        <div>
+                          <p>01:24</p>
+                        </div>
+                      </div>
+                      <div class="flex justify-between mb-3">
+                        <div class="flex gap-2">
+                          <img src="/assets/svg/Document.svg" alt="dowland">
+                          <p class="text-xl font-semibold">Courses resources</p>
+                        </div>
+                        <div>
+                          <p>01:24</p>
+                        </div>
+                      </div>
+                      <div class="flex justify-between mb-3">
+                        <div class="flex gap-2">
+                          <img src="/assets/svg/Document.svg" alt="dowland">
+                          <p class="text-xl font-semibold">Join online group classes</p>
+                        </div>
+                        <div>
+                          <p>01:24</p>
+                        </div>
+                      </div>
+                      <div class="flex justify-between mb-3">
+                        <div class="flex gap-2">
+                          <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                          <p class="text-xl font-semibold">How do website actually work?</p>
+                        </div>
+                        <div>
+                          <p>01:24</p>
+                        </div>
+                      </div>
+                      <div class="flex justify-between mb-3">
+                        <div class="flex gap-2">
+                          <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                          <p class="text-xl font-semibold">What is Internet?</p>
+                        </div>
+                        <div>
+                          <p>01:24</p>
+                        </div>
+                      </div>
+                      <div class="flex justify-between mb-3">
+                        <div class="flex gap-2">
+                          <img src="/assets/svg/Document.svg" alt="dowland">
+                          <p class="text-xl font-semibold">Download 10 rules code</p>
+                        </div>
+                        <div>
+                          <p>01:24</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="md:w-[600px] w-[300px]">
+                  <button
+                      class="accordion-button rounded-md bg-[#FFF5F9] flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black  focus:outline-none ">
+                      <span class="lg:text-[18px] text-[13px]">
+                        Introducing HTML
+                      </span>
+                      <img src="/assets/svg/chevron-top.svg" alt="#">
+                  </button>
+                  <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                    <div class="flex justify-between mb-3">
+                      <div class="flex gap-2">
+                        <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                        <p class="text-xl font-semibold">Welcome!</p>
+                      </div>
+                      <div>
+                        <p>01:24</p>
+                      </div>
+                    </div>
+                    <div class="flex justify-between mb-3">
+                      <div class="flex gap-2">
+                        <img src="/assets/svg/Document.svg" alt="dowland">
+                        <p class="text-xl font-semibold">Syllabus download</p>
+                      </div>
+                      <div>
+                        <p>01:24</p>
+                      </div>
+                    </div>
+                    <div class="flex justify-between mb-3">
+                      <div class="flex gap-2">
+                        <img src="/assets/svg/Document.svg" alt="dowland">
+                        <p class="text-xl font-semibold">Courses resources</p>
+                      </div>
+                      <div>
+                        <p>01:24</p>
+                      </div>
+                    </div>
+                    <div class="flex justify-between mb-3">
+                      <div class="flex gap-2">
+                        <img src="/assets/svg/Document.svg" alt="dowland">
+                        <p class="text-xl font-semibold">Join online group classes</p>
+                      </div>
+                      <div>
+                        <p>01:24</p>
+                      </div>
+                    </div>
+                    <div class="flex justify-between mb-3">
+                      <div class="flex gap-2">
+                        <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                        <p class="text-xl font-semibold">How do website actually work?</p>
+                      </div>
+                      <div>
+                        <p>01:24</p>
+                      </div>
+                    </div>
+                    <div class="flex justify-between mb-3">
+                      <div class="flex gap-2">
+                        <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                        <p class="text-xl font-semibold">What is Internet?</p>
+                      </div>
+                      <div>
+                        <p>01:24</p>
+                      </div>
+                    </div>
+                    <div class="flex justify-between mb-3">
+                      <div class="flex gap-2">
+                        <img src="/assets/svg/Document.svg" alt="dowland">
+                        <p class="text-xl font-semibold">Download 10 rules code</p>
+                      </div>
+                      <div>
+                        <p>01:24</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="md:w-[600px] w-[300px]">
+                <button
+                    class="accordion-button rounded-md bg-[#FFF5F9] flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black  focus:outline-none ">
+                    <span class="lg:text-[18px] text-[13px]">
+                      Introducing CSS
+                    </span>
+                    <img src="/assets/svg/chevron-top.svg" alt="#">
+                </button>
+                <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                  <div class="flex justify-between mb-3">
+                    <div class="flex gap-2">
+                      <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                      <p class="text-xl font-semibold">Welcome!</p>
+                    </div>
+                    <div>
+                      <p>01:24</p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between mb-3">
+                    <div class="flex gap-2">
+                      <img src="/assets/svg/Document.svg" alt="dowland">
+                      <p class="text-xl font-semibold">Syllabus download</p>
+                    </div>
+                    <div>
+                      <p>01:24</p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between mb-3">
+                    <div class="flex gap-2">
+                      <img src="/assets/svg/Document.svg" alt="dowland">
+                      <p class="text-xl font-semibold">Courses resources</p>
+                    </div>
+                    <div>
+                      <p>01:24</p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between mb-3">
+                    <div class="flex gap-2">
+                      <img src="/assets/svg/Document.svg" alt="dowland">
+                      <p class="text-xl font-semibold">Join online group classes</p>
+                    </div>
+                    <div>
+                      <p>01:24</p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between mb-3">
+                    <div class="flex gap-2">
+                      <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                      <p class="text-xl font-semibold">How do website actually work?</p>
+                    </div>
+                    <div>
+                      <p>01:24</p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between mb-3">
+                    <div class="flex gap-2">
+                      <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                      <p class="text-xl font-semibold">What is Internet?</p>
+                    </div>
+                    <div>
+                      <p>01:24</p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between mb-3">
+                    <div class="flex gap-2">
+                      <img src="/assets/svg/Document.svg" alt="dowland">
+                      <p class="text-xl font-semibold">Download 10 rules code</p>
+                    </div>
+                    <div>
+                      <p>01:24</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="md:w-[600px] w-[300px]">
+              <button
+                  class="accordion-button rounded-md bg-[#FFF5F9] flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black  focus:outline-none ">
+                  <span class="lg:text-[18px] text-[13px]">
+                    Intermediate CSS
+                  </span>
+                  <img src="/assets/svg/chevron-top.svg" alt="#">
+              </button>
+              <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-2">
+                    <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                    <p class="text-xl font-semibold">Welcome!</p>
+                  </div>
+                  <div>
+                    <p>01:24</p>
+                  </div>
+                </div>
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-2">
+                    <img src="/assets/svg/Document.svg" alt="dowland">
+                    <p class="text-xl font-semibold">Syllabus download</p>
+                  </div>
+                  <div>
+                    <p>01:24</p>
+                  </div>
+                </div>
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-2">
+                    <img src="/assets/svg/Document.svg" alt="dowland">
+                    <p class="text-xl font-semibold">Courses resources</p>
+                  </div>
+                  <div>
+                    <p>01:24</p>
+                  </div>
+                </div>
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-2">
+                    <img src="/assets/svg/Document.svg" alt="dowland">
+                    <p class="text-xl font-semibold">Join online group classes</p>
+                  </div>
+                  <div>
+                    <p>01:24</p>
+                  </div>
+                </div>
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-2">
+                    <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                    <p class="text-xl font-semibold">How do website actually work?</p>
+                  </div>
+                  <div>
+                    <p>01:24</p>
+                  </div>
+                </div>
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-2">
+                    <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                    <p class="text-xl font-semibold">What is Internet?</p>
+                  </div>
+                  <div>
+                    <p>01:24</p>
+                  </div>
+                </div>
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-2">
+                    <img src="/assets/svg/Document.svg" alt="dowland">
+                    <p class="text-xl font-semibold">Download 10 rules code</p>
+                  </div>
+                  <div>
+                    <p>01:24</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="md:w-[600px] w-[300px]">
+            <button
+                class="accordion-button rounded-md bg-[#FFF5F9] flex items-center justify-between gap-5 w-full text-left py-4 px-6 transition-all text-black  focus:outline-none ">
+                <span class="lg:text-[18px] text-[13px]">
+                  Introduction Bootstrap
+                </span>
+                <img src="/assets/svg/chevron-top.svg" alt="#">
+            </button>
+            <div class="accordion-content px-6 py-4 text-gray-700 hidden">
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-2">
+                  <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                  <p class="text-xl font-semibold">Welcome!</p>
+                </div>
+                <div>
+                  <p>01:24</p>
+                </div>
+              </div>
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-2">
+                  <img src="/assets/svg/Document.svg" alt="dowland">
+                  <p class="text-xl font-semibold">Syllabus download</p>
+                </div>
+                <div>
+                  <p>01:24</p>
+                </div>
+              </div>
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-2">
+                  <img src="/assets/svg/Document.svg" alt="dowland">
+                  <p class="text-xl font-semibold">Courses resources</p>
+                </div>
+                <div>
+                  <p>01:24</p>
+                </div>
+              </div>
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-2">
+                  <img src="/assets/svg/Document.svg" alt="dowland">
+                  <p class="text-xl font-semibold">Join online group classes</p>
+                </div>
+                <div>
+                  <p>01:24</p>
+                </div>
+              </div>
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-2">
+                  <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                  <p class="text-xl font-semibold">How do website actually work?</p>
+                </div>
+                <div>
+                  <p>01:24</p>
+                </div>
+              </div>
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-2">
+                  <img src="/assets/svg/play_circle_filled.svg" alt="dowland">
+                  <p class="text-xl font-semibold">What is Internet?</p>
+                </div>
+                <div>
+                  <p>01:24</p>
+                </div>
+              </div>
+              <div class="flex justify-between mb-3">
+                <div class="flex gap-2">
+                  <img src="/assets/svg/Document.svg" alt="dowland">
+                  <p class="text-xl font-semibold">Download 10 rules code</p>
+                </div>
+                <div>
+                  <p>01:24</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div>
+          <button class="px-4 py-2  text-white rounded-md bg-[#F72585] flex justify-center items-center md:w-[600px] w-[300px] h-[50px]">
+            17 More Modules
+          </button>
+          
+        </div>
+              </div>
+      </section>
+    </main>
+    <section>
+      <div class="bg-transparent container max-w-[1400px] mx-auto  md:flex md:gap-5 md:px-6  flex-wrap px-10 pb-5">
+        <div>
+          <img src="/assets/svg/Image Placeholder.svg" alt="dowland">
+        </div>
+        <div class="flex flex-col gap-3">
+          <p class="text-xl font-semibold text-[#1C3554]">Arif kecek</p>
+          <p class="text-[#808080]">Senior developer expert instructor</p>
+          <div class="md:flex md:gap-3">
+            <div class="flex gap-3">
+              <img src="/assets/svg/3.svg" alt="dowland">
+              <img src="/assets/svg/3.svg" alt="dowland">
+              <img src="/assets/svg/3.svg" alt="dowland">
+              <img src="/assets/svg/3.svg" alt="dowland">
+              <img src="/assets/svg/3.svg" alt="dowland">
+            </div>
+            <div>
+              <a href="#">4,7/5</a>
+            </div>
+          </div>
+          <div class="w-[300px]">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis.</p>
+          </div>
+          <div class="flex gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="/assets/svg/Container (1).svg" alt="dowland">
+              <p>12 Courses</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="/assets/svg/Container (1).svg" alt="dowland">
+              <p>2583 Student</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-transparent container max-w-[1400px] mx-auto md:px-6 md:flex md:flex-col gap-10 ">
+        <div class="md:flex md:justify-between w-[580px]">
+          <div class="flex gap-4">
+            <img src="/assets/svg/Container (2).svg" alt="dowland">
+            <div>
+              <p class="text-[#1C3554] text-xl">Mas Ehan</p>
+              <div class="flex gap-2">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+              </div>
+              <p>2 month ago</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <img src="/assets/svg/thumbs-down.svg" alt="dowland">
+            <img src="/assets/svg/thumbs-up.svg" alt="dowland">
+          </div>
+        </div>
+        <div class="md:w-[600px]">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae non id interdum massa enim posuere. Tempus, risus varius rhoncus ipsum, sed egestas nisi pellentesque. Sapien quam varius euismod in velit diam posuere netus nec. A consectetur nec ac sed convallis adipiscing. Aenean enim cursus a mattis ac velit, quis. Nibh id dui, justo, at tempus. Mauris egestas nunc morbi dignissim.</p>
+        </div>
+        <div class="border-2 border-[#808080] w-[600px] "></div>
+        <div class="md:flex md:justify-between w-[580px]">
+          <div class="flex gap-4">
+            <img src="/assets/svg/Container (2).svg" alt="dowland">
+            <div>
+              <p class="text-[#1C3554] text-xl">Mas Ehan</p>
+              <div class="flex gap-2">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+              </div>
+              <p>2 month ago</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <img src="/assets/svg/thumbs-down.svg" alt="dowland">
+            <img src="/assets/svg/thumbs-up.svg" alt="dowland">
+          </div>
+        </div>
+        <div class="md:w-[600px]">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae non id interdum massa enim posuere. Tempus, risus varius rhoncus ipsum, sed egestas nisi pellentesque. Sapien quam varius euismod in velit diam posuere netus nec. A consectetur nec ac sed convallis adipiscing. Aenean enim cursus a mattis ac velit, quis. Nibh id dui, justo, at tempus. Mauris egestas nunc morbi dignissim.</p>
+        </div>
+        <div class="border-2 border-[#808080] w-[600px] "></div>
+        <div class="md:flex md:justify-between w-[580px]">
+          <div class="flex gap-4">
+            <img src="/assets/svg/Container (2).svg" alt="dowland">
+            <div>
+              <p class="text-[#1C3554] text-xl">Mas Ehan</p>
+              <div class="flex gap-2">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+                <img src="/assets/svg/3.svg" alt="dowland">
+              </div>
+              <p>2 month ago</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <img src="/assets/svg/thumbs-down.svg" alt="dowland">
+            <img src="/assets/svg/thumbs-up.svg" alt="dowland">
+          </div>
+        </div>
+        <div class="md:w-[600px]">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae non id interdum massa enim posuere. Tempus, risus varius rhoncus ipsum, sed egestas nisi pellentesque. Sapien quam varius euismod in velit diam posuere netus nec. A consectetur nec ac sed convallis adipiscing. Aenean enim cursus a mattis ac velit, quis. Nibh id dui, justo, at tempus. Mauris egestas nunc morbi dignissim.</p>
+        </div>
+        <div class="border-2 border-[#808080]  w-[600px] "></div>
+      </div>
+      <div class="bg-transparent container max-w-[1400px] mx-auto  md:px-6 pt-10">
+        <button class=" px-4 py-2  text-white rounded-md bg-[#F72585] flex justify-center items-center md:w-[600px] w-[300px] h-[50px]">
+          More Reviews
+        </button>
+      </div>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+</html>
