@@ -41,3 +41,20 @@ document.getElementById("Categories-toggle").addEventListener("click", function(
       categoriesIcon.style.transform = "rotate(0deg)"; // Reset icon rotation
     }
   });
+  // JavaScript to toggle the visibility of the Level section and icon rotation
+document.getElementById("Level-toggle").addEventListener("click", function() {
+    const levelSection = document.getElementById("Level-section");
+    const levelIcon = document.getElementById("Level-icon");
+  
+    // Toggle max-height for sliding effect
+    const currentMaxHeight = levelSection.style.maxHeight;
+  
+    if (currentMaxHeight === "0px" || currentMaxHeight === "") {
+      levelSection.style.maxHeight = "500px"; // Set a max height when expanded
+      levelIcon.style.transform = "rotate(180deg)"; // Rotate icon when expanded
+    } else {
+      levelSection.style.maxHeight = "0px"; // Collapse the section
+      levelIcon.style.transform = "rotate(0deg)"; // Reset icon rotation
+    }
+  });
+  
