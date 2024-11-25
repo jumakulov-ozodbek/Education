@@ -206,52 +206,59 @@
     <div class="max-w-xs bg-white rounded-lg shadow-md p-4">
 
         <h1 class="text-2xl font-bold text-gray-800 mb-4">All Courses</h1>
-
-        <div class="mb-4">
-            <h2 class="text-xl font-semibold text-gray-700 mb-2">Ratings</h2>
-            <div class="space-y-2">
-                <div>
-                    <input type="radio" id="rating1" name="rating" class="hidden peer" />
-                    <label for="rating1" class="flex items-center cursor-pointer">
-                        <span class="mr-2">⭐</span>
-                        <input type="checkbox" id="paid" name="price" class="mr-2" />
-                        <span>1 Star</span>
-                    </label>
+        <div class="w-72 bg-white rounded-lg shadow-md p-4">
+            <button 
+              onclick="toggleRatings()" 
+              class="w-full flex items-center justify-between text-lg font-semibold text-gray-800 mb-2"
+            >
+            
+              <span>Ratings</span>
+              <span id="chevron-icon" class="text-gray-800">
+                ▼
+              </span>
+            </button>
+          
+            <div id="ratings-section" class="transition-[max-height] duration-300 ease-in-out overflow-hidden max-h-0">
+              <div class="flex items-center mb-4">
+                
+                <div class="flex items-center w-24">
+                    
+                  <svg class="fill-yellow-400 text-yellow-400 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 .587l3.668 7.431 8.332 1.209-6.001 5.847 1.417 8.26L12 18.897l-7.416 3.894 1.417-8.26L0 9.227l8.332-1.209L12 .587z"/>
+                  </svg>
+                  <svg class="fill-yellow-400 text-yellow-400 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 .587l3.668 7.431 8.332 1.209-6.001 5.847 1.417 8.26L12 18.897l-7.416 3.894 1.417-8.26L0 9.227l8.332-1.209L12 .587z"/>
+                  </svg>
                 </div>
-                <div>
-                    <input type="radio" id="rating2" name="rating" class="hidden peer" />
-                    <label for="rating2" class="flex items-center cursor-pointer">
-                        <input type="checkbox" id="paid" name="price" class="mr-2" />
-                        <span class="mr-2">⭐⭐</span>
-                        <span>2 Stars</span>
-                    </label>
+                <div class="flex-1 mx-4">
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-yellow-400 rounded-full h-2" style="width: 70%;"></div>
+                  </div>
                 </div>
-                <div>
-                    <input type="radio" id="rating3" name="rating" class="hidden peer" />
-                    <label for="rating3" class="flex items-center cursor-pointer">
-                        <input type="checkbox" id="paid" name="price" class="mr-2" />
-                        <span class="mr-2">⭐⭐⭐</span>
-                        <span>3 Stars</span>
-                    </label>
-                </div>
-                <div>
-                    <input type="radio" id="rating4" name="rating" class="hidden peer" />
-                    <label for="rating4" class="flex items-center cursor-pointer">
-                        <input type="checkbox" id="paid" name="price" class="mr-2" />
-                        <span class="mr-2">⭐⭐⭐⭐</span>
-                        <span>4 Stars</span>
-                    </label>
-                </div>
-                <div>
-                    <input type="radio" id="rating5" name="rating" class="hidden peer" />
-                    <label for="rating5" class="flex items-center cursor-pointer">
-                        <input type="checkbox" id="paid" name="price" class="mr-2" />
-                        <span class="mr-2">⭐⭐⭐⭐⭐</span>
-                        <span>5 Stars</span>
-                    </label>
-                </div>
+                <span class="text-sm text-gray-600 w-16 text-right">(7242)</span>
+              </div>
+          
+              <!-- Repeat above block for 4, 3, 2, and 1-star ratings -->
             </div>
-        </div>
+         
+          
+          <script>
+            function toggleRatings() {
+              const ratingsSection = document.getElementById('ratings-section');
+              const chevronIcon = document.getElementById('chevron-icon');
+              
+              if (ratingsSection.classList.contains('max-h-0')) {
+                ratingsSection.classList.remove('max-h-0');
+                ratingsSection.classList.add('max-h-96');
+                chevronIcon.textContent = '▲';
+              } else {
+                ratingsSection.classList.remove('max-h-96');
+                ratingsSection.classList.add('max-h-0');
+                chevronIcon.textContent = '▼';
+              }
+            }
+          </script>
+          
 
      
         <div class="mb-4">
@@ -277,6 +284,7 @@
             <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Apply Filters</button>
         </div>
     </div>
+</div>
 
 
 
