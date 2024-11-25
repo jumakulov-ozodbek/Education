@@ -57,4 +57,20 @@ document.getElementById("Level-toggle").addEventListener("click", function() {
       levelIcon.style.transform = "rotate(0deg)"; // Reset icon rotation
     }
   });
+// JavaScript to toggle the visibility of the Language section and icon rotation
+document.getElementById("Language-toggle").addEventListener("click", function() {
+    const languageSection = document.getElementById("Language-section");
+    const languageIcon = document.getElementById("Language-icon");
   
+    // Toggle max-height for sliding effect
+    const currentMaxHeight = languageSection.style.maxHeight;
+  
+    if (currentMaxHeight === "0px" || currentMaxHeight === "") {
+      languageSection.style.maxHeight = "500px"; // Set a max height when expanded
+      languageIcon.style.transform = "rotate(180deg)"; // Rotate icon when expanded
+    } else {
+      languageSection.style.maxHeight = "0px"; // Collapse the section
+      languageIcon.style.transform = "rotate(0deg)"; // Reset icon rotation
+    }
+  });
+    
