@@ -204,87 +204,137 @@
         </div>
     </div>
     <div class="max-w-xs bg-white rounded-lg shadow-md p-4">
-
         <h1 class="text-2xl font-bold text-gray-800 mb-4">All Courses</h1>
-        <div class="w-72 bg-white rounded-lg shadow-md p-4">
-            <button 
-              onclick="toggleRatings()" 
-              class="w-full flex items-center justify-between text-lg font-semibold text-gray-800 mb-2"
-            >
-            
-              <span>Ratings</span>
-              <span id="chevron-icon" class="text-gray-800">
-                ▼
-              </span>
-            </button>
-          
-            <div id="ratings-section" class="transition-[max-height] duration-300 ease-in-out overflow-hidden max-h-0">
-              <div class="flex items-center mb-4">
-                
-                <div class="flex items-center w-24">
+      
+
+            <div class="p-4">
+                <!-- Ratings Section -->
+                <div class="mb-6">
+                    <h2 class="text-lg font-bold mb-3 flex items-center cursor-pointer" id="ratings-toggle">
+                      <span>Ratings</span>
+                      <svg id="ratings-icon" class="w-5 h-5 ml-2 text-gray-500 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </h2>
                     
-                  <svg class="fill-yellow-400 text-yellow-400 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 .587l3.668 7.431 8.332 1.209-6.001 5.847 1.417 8.26L12 18.897l-7.416 3.894 1.417-8.26L0 9.227l8.332-1.209L12 .587z"/>
-                  </svg>
-                  <svg class="fill-yellow-400 text-yellow-400 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 .587l3.668 7.431 8.332 1.209-6.001 5.847 1.417 8.26L12 18.897l-7.416 3.894 1.417-8.26L0 9.227l8.332-1.209L12 .587z"/>
-                  </svg>
-                </div>
-                <div class="flex-1 mx-4">
-                  <div class="w-full bg-gray-200 rounded-full h-2">
-                    <div class="bg-yellow-400 rounded-full h-2" style="width: 70%;"></div>
+                    <div id="ratings-section" class="space-y-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                      <label class="flex items-center space-x-2 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox text-yellow-500 rounded" />
+                        <span class="text-sm">
+                          <span class="text-yellow-500">★★★★★</span> 5
+                        </span>
+                        <span class="ml-auto text-gray-500">(1242)</span>
+                      </label>
+                      <label class="flex items-center space-x-2 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox text-yellow-500 rounded" />
+                        <span class="text-sm">
+                          <span class="text-yellow-500">★★★★☆</span> 4+
+                        </span>
+                        <span class="ml-auto text-gray-500">(2145)</span>
+                      </label>
+                      <label class="flex items-center space-x-2 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox text-yellow-500 rounded" />
+                        <span class="text-sm">
+                          <span class="text-yellow-500">★★★☆☆</span> 3+
+                        </span>
+                        <span class="ml-auto text-gray-500">(224)</span>
+                      </label>
+                      <label class="flex items-center space-x-2 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox text-yellow-500 rounded" />
+                        <span class="text-sm">
+                          <span class="text-yellow-500">★★☆☆☆</span> 2+
+                        </span>
+                        <span class="ml-auto text-gray-500">(2049)</span>
+                      </label>
+                      <label class="flex items-center space-x-2 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox text-yellow-500 rounded" />
+                        <span class="text-sm">
+                          <span class="text-yellow-500">★☆☆☆☆</span> 1+
+                        </span>
+                        <span class="ml-auto text-gray-500">(2049)</span>
+                      </label>
+                    </div>
+                  </div>
+                  
+                  
+              
+                <!-- Durations Section -->
+                <div>
+                  <h2 class="text-lg font-bold mb-3">Durations</h2>
+                  <div class="space-y-2">
+                    <label class="flex items-center space-x-2 cursor-pointer">
+                      <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
+                      <span class="text-sm">1-3 Hours</span>
+                      <span class="ml-auto text-gray-500">(1242)</span>
+                    </label>
+                    <label class="flex items-center space-x-2 cursor-pointer">
+                      <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
+                      <span class="text-sm">3-6 Hours</span>
+                      <span class="ml-auto text-gray-500">(2145)</span>
+                    </label>
+                    <label class="flex items-center space-x-2 cursor-pointer">
+                      <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
+                      <span class="text-sm">6-12 Hours</span>
+                      <span class="ml-auto text-gray-500">(224)</span>
+                    </label>
+                    <label class="flex items-center space-x-2 cursor-pointer">
+                      <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
+                      <span class="text-sm">12+ Hours</span>
+                      <span class="ml-auto text-gray-500">(2049)</span>
+                    </label>
                   </div>
                 </div>
-                <span class="text-sm text-gray-600 w-16 text-right">(7242)</span>
               </div>
-          
-              <!-- Repeat above block for 4, 3, 2, and 1-star ratings -->
-            </div>
-         
-          
-          <script>
-            function toggleRatings() {
-              const ratingsSection = document.getElementById('ratings-section');
-              const chevronIcon = document.getElementById('chevron-icon');
               
-              if (ratingsSection.classList.contains('max-h-0')) {
-                ratingsSection.classList.remove('max-h-0');
-                ratingsSection.classList.add('max-h-96');
-                chevronIcon.textContent = '▲';
-              } else {
-                ratingsSection.classList.remove('max-h-96');
-                ratingsSection.classList.add('max-h-0');
-                chevronIcon.textContent = '▼';
-              }
-            }
-          </script>
-          
+              
 
-     
-        <div class="mb-4">
-            <h2 class="text-xl font-semibold text-gray-700 mb-2">Price</h2>
-            <div>
-                <input type="checkbox" id="free" name="price" class="mr-2" />
-                <label for="free" class="cursor-pointer">Free</label>
+</div>
+
+
+<script>
+    document.getElementById("ratings-toggle").addEventListener("click", function() {
+  const ratingsSection = document.getElementById("ratings-section");
+  const ratingsIcon = document.getElementById("ratings-icon");
+
+  // Toggle max-height for sliding effect
+  const currentMaxHeight = ratingsSection.style.maxHeight;
+
+  if (currentMaxHeight === "0px" || currentMaxHeight === "") {
+    ratingsSection.style.maxHeight = "1000px"; // Set a max height when expanded
+    ratingsIcon.style.transform = "rotate(180deg)"; // Rotate icon when expanded
+  } else {
+    ratingsSection.style.maxHeight = "0px"; // Collapse the section
+    ratingsIcon.style.transform = "rotate(0deg)"; // Reset icon rotation
+  }
+});
+</script>
+
+
+
+            <div class="mb-4">
+                <h2 class="text-xl font-semibold text-gray-700 mb-2">Price</h2>
+                <div>
+                    <input type="checkbox" id="free" name="price" class="mr-2" />
+                    <label for="free" class="cursor-pointer">Free</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="paid" name="price" class="mr-2" />
+                    <label for="paid" class="cursor-pointer">Paid</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox" id="paid" name="price" class="mr-2" />
-                <label for="paid" class="cursor-pointer">Paid</label>
+            <div class="mb-4">
+                <h2 class="text-xl font-semibold text-gray-700 mb-2">Difficulty Level</h2>
+                <select id="difficulty" class="w-full p-2 border border-gray-300 rounded-lg">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
             </div>
-        </div>
-        <div class="mb-4">
-            <h2 class="text-xl font-semibold text-gray-700 mb-2">Difficulty Level</h2>
-            <select id="difficulty" class="w-full p-2 border border-gray-300 rounded-lg">
-                <option value="beginner">Beginner</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="advanced">Advanced</option>
-            </select>
-        </div>
-        <div class="flex justify-center">
-            <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Apply Filters</button>
+            <div class="flex justify-center">
+                <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Apply Filters</button>
+            </div>
         </div>
     </div>
-</div>
 
 
 
