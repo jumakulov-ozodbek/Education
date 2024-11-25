@@ -216,7 +216,8 @@
                     </svg>
                 </h2>
 
-                <div id="ratings-section"class="space-y-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div id="ratings-section"
+                    class="space-y-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                     <label class="flex items-center space-x-2 cursor-pointer">
                         <input type="checkbox" class="form-checkbox text-yellow-500 rounded" />
                         <span class="text-sm">
@@ -254,32 +255,40 @@
                     </label>
                 </div>
             </div>
-            <!-- Durations Section -->
-            <div>
-                <h2 class="text-lg font-bold mb-3">Durations</h2>
-                <div class="space-y-2">
-                    <label class="flex items-center space-x-2 cursor-pointer">
-                        <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
-                        <span class="text-sm">1-3 Hours</span>
-                        <span class="ml-auto text-gray-500">(1242)</span>
-                    </label>
-                    <label class="flex items-center space-x-2 cursor-pointer">
-                        <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
-                        <span class="text-sm">3-6 Hours</span>
-                        <span class="ml-auto text-gray-500">(2145)</span>
-                    </label>
-                    <label class="flex items-center space-x-2 cursor-pointer">
-                        <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
-                        <span class="text-sm">6-12 Hours</span>
-                        <span class="ml-auto text-gray-500">(224)</span>
-                    </label>
-                    <label class="flex items-center space-x-2 cursor-pointer">
-                        <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
-                        <span class="text-sm">12+ Hours</span>
-                        <span class="ml-auto text-gray-500">(2049)</span>
-                    </label>
+
+            <div class="mb-6">
+                <h2 class="text-lg font-bold mb-3 flex items-center cursor-pointer" id="durations-toggle">
+                  <span>Durations</span>
+                  <svg id="durations-icon" class="w-5 h-5 ml-2 text-gray-500 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 9l-7 7-7-7" />
+                  </svg>
+                </h2>
+              
+                <div id="durations-section" class="space-y-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
+                    <span class="text-sm">1-3 Hours</span>
+                    <span class="ml-auto text-gray-500">(1242)</span>
+                  </label>
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
+                    <span class="text-sm">3-6 Hours</span>
+                    <span class="ml-auto text-gray-500">(2145)</span>
+                  </label>
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
+                    <span class="text-sm">6-12 Hours</span>
+                    <span class="ml-auto text-gray-500">(224)</span>
+                  </label>
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox text-blue-500 rounded" />
+                    <span class="text-sm">12+ Hours</span>
+                    <span class="ml-auto text-gray-500">(2049)</span>
+                  </label>
                 </div>
-            </div>
+              </div>
+              
+
         </div>
     </div>
     <script>
@@ -297,7 +306,26 @@
                 ratingsIcon.style.transform = "rotate(0deg)";
             }
         });
+
     </script>
+    <script>
+        document.getElementById("durations-toggle").addEventListener("click", function () {
+            const durationsSection = document.getElementById("durations-section");
+            const durationsIcon = document.getElementById("durations-icon");
+
+            // Toggle max-height for sliding effect
+            const currentMaxHeight = durationsSection.style.maxHeight;
+
+            if (currentMaxHeight === "0px" || currentMaxHeight === "") {
+                durationsSection.style.maxHeight = "1000px"; // Set a max height when expanded
+                durationsIcon.style.transform = "rotate(180deg)"; // Rotate icon when expanded
+            } else {
+                durationsSection.style.maxHeight = "0px"; // Collapse the section
+                durationsIcon.style.transform = "rotate(0deg)"; // Reset icon rotation
+            }
+        });
+    </script>
+
 
 
 
