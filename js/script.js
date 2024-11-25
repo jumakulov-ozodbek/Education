@@ -26,3 +26,18 @@ document.getElementById("durations-toggle").addEventListener("click", function (
         durationsIcon.style.transform = "rotate(0deg)";
     }
 }); 
+document.getElementById("Categories-toggle").addEventListener("click", function() {
+    const categoriesSection = document.getElementById("Categories-section");
+    const categoriesIcon = document.getElementById("Categories-icon");
+  
+    // Toggle max-height for sliding effect
+    const currentMaxHeight = categoriesSection.style.maxHeight;
+  
+    if (currentMaxHeight === "0px" || currentMaxHeight === "") {
+      categoriesSection.style.maxHeight = "500px"; // Set a max height when expanded
+      categoriesIcon.style.transform = "rotate(180deg)"; // Rotate icon when expanded
+    } else {
+      categoriesSection.style.maxHeight = "0px"; // Collapse the section
+      categoriesIcon.style.transform = "rotate(0deg)"; // Reset icon rotation
+    }
+  });
