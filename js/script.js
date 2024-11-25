@@ -73,4 +73,27 @@ document.getElementById("Language-toggle").addEventListener("click", function() 
       languageIcon.style.transform = "rotate(0deg)"; // Reset icon rotation
     }
   });
-    
+  const priceToggle = document.getElementById("Price-toggle");
+  const priceSection = document.getElementById("Price-section");
+  const priceIcon = document.getElementById("Price-icon");
+
+  priceToggle.addEventListener("click", () => {
+    // Toggle max-height to show or hide the section
+    priceSection.classList.toggle("max-h-0");
+    priceSection.classList.toggle("max-h-screen");  // Optional: max-h-screen for the open state
+
+    // Rotate the icon when the section is opened or closed
+    priceIcon.classList.toggle("rotate-180");
+  });
+  const featuresToggle = document.getElementById("Features-toggle");
+  const featuresSection = document.getElementById("Features-section");
+  const featuresIcon = document.getElementById("Features-icon");
+
+  featuresToggle.addEventListener("click", () => {
+    // Toggle max-height to show or hide the section
+    featuresSection.classList.toggle("max-h-0");
+    featuresSection.classList.toggle("max-h-screen");  // Optional: max-h-screen for the open state
+
+    // Rotate the icon when the section is opened or closed
+    featuresIcon.classList.toggle("rotate-180");
+  });    
