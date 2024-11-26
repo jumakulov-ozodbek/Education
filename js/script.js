@@ -118,19 +118,18 @@ cards.forEach(card => {
     autoplay: 3000, 
   }).mount();
 
-// Dropdown menyu ochilish/yopilish funksiyasi
+
 document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.getElementById('menu-button');
   const dropdownMenu = menuButton.nextElementSibling;
 
-  // Menyuni ochish/yopish
   menuButton.addEventListener('click', () => {
     const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
     menuButton.setAttribute('aria-expanded', !isExpanded);
     dropdownMenu.classList.toggle('hidden');
   });
 
-  // Menyudan tashqarida bosilganda menyuni yopish
+
   document.addEventListener('click', (event) => {
     if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
       menuButton.setAttribute('aria-expanded', 'false');
@@ -138,20 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-new Splide('#course-slider', {
-  type: 'loop',
-  perPage: 3,
-  focus: 'center',
-  gap: '1rem',
-  breakpoints: {
-    640: {
-      perPage: 1,
-    },
-    768: {
-      perPage: 2,
-    },
-  },
-}).mount();
+
 
 
 
