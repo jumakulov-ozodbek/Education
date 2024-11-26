@@ -113,8 +113,8 @@ cards.forEach(card => {
 
   new Glide('.glide', {
     type: 'carousel',
-    perView: 3, // Bir vaqtning o'zida ko'rsatiladigan slaydlar soni
-    gap: 30, // Slaydlar orasidagi bo'shliq
-    autoplay: 3000, // Avtomatik slayd vaqt oraliq (ms)
+    perView: 3, 
+    gap: 30, 
+    autoplay: 3000, 
   }).mount();
 
