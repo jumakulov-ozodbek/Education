@@ -118,3 +118,47 @@ cards.forEach(card => {
     autoplay: 3000, 
   }).mount();
 
+// Dropdown menyu ochilish/yopilish funksiyasi
+document.addEventListener('DOMContentLoaded', () => {
+  const menuButton = document.getElementById('menu-button');
+  const dropdownMenu = menuButton.nextElementSibling;
+
+  // Menyuni ochish/yopish
+  menuButton.addEventListener('click', () => {
+    const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', !isExpanded);
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  // Menyudan tashqarida bosilganda menyuni yopish
+  document.addEventListener('click', (event) => {
+    if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+      menuButton.setAttribute('aria-expanded', 'false');
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+const accordionButtons = document.querySelectorAll('.accordion-button');
+
+accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+
+        if (content) {
+            content.classList.toggle('hidden');
+            content.classList.toggle('block');
+        }
+
+        button.classList.toggle('bg-red-500');
+    });
+});
+
