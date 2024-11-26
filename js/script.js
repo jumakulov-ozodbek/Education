@@ -138,6 +138,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+new Splide('#course-slider', {
+  type: 'loop',
+  perPage: 3,
+  focus: 'center',
+  gap: '1rem',
+  breakpoints: {
+    640: {
+      perPage: 1,
+    },
+    768: {
+      perPage: 2,
+    },
+  },
+}).mount();
 
 
 
